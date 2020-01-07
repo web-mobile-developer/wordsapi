@@ -8,16 +8,18 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
 <div id="app">
     <div class="container">
-        <div class="navbar-header">
-            <h1>WORDSAPI</h1>
+        <div class="navbar pl-0">
+            <h2>WORDSAPI</h2>
         </div>
     </div>
     @yield('content')
 </div>
 </body>
+@yield('preVueScripts')
+<script src="{{asset('js/app.js')}}"></script>
 </html>
