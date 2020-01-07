@@ -16,3 +16,6 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/get-recent-words', 'Api\WordsController@getRecentWords');
+Route::post('/search-words', 'Api\WordsController@searchWords');
